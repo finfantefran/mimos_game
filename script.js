@@ -5,5 +5,10 @@ document.getElementById('no-button').addEventListener('mouseover', function () {
     const randomX = Math.random() * maxX;
     const randomY = Math.random() * maxY;
     button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    noButton.addEventListener('mouseover', moveButton);
     noButton.addEventListener('touchstart', moveButton);
+});
+
+document.getElementById('yes-button').addEventListener('click', function() {
+    document.querySelector('h1').textContent = 'No eres un toxo';
 });
