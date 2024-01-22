@@ -15,5 +15,5 @@ noButton.addEventListener('touchstart', moveButton);
 
 
 document.getElementById('yes-button').addEventListener('click', function() {
-    document.querySelector('h1').textContent = 'Eres un toxo';
+    document.querySelector('h1').textContent = 'No eres un toxo';
 });
